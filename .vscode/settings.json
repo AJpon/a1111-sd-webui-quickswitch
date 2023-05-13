@@ -1,0 +1,11 @@
+{
+    "python.analysis.extraPaths": [
+        "../../",
+        "../../venv/Lib/site-packages/"
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "150"
+    ],
+    "python.formatting.provider": "autopep8"
+}
