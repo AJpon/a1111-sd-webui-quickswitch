@@ -10,7 +10,7 @@
     transform: translate(-50%, -50%);
     z-index: 9999;
     width: max(400px, 60%);
-    height: 200px;
+    height: 280px;
     margin: 200px 0 0 0;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
@@ -34,10 +34,43 @@
     border-radius: 3px;
     color: #c4c4c4;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    height: 100%;
+    height: calc(100% - 60px);
     overflow: auto;
     padding: 10px;
-    width: 100%;
 }
+
+#search-box #search-results li {
+    padding: 4px 0;
+    border-bottom: 1px solid #4444;
+}
+
+#search-box #search-results li:hover {
+    background: #bbb4;
+    color: #fff;
+    transition: all 0.2s ease-out;
+}
+
+
+/* 
+#search-results.ul ::-webkit-scrollbar {
+    display: block;
+    width: 0.5em;
+}
+
+#search-results.ul ::-webkit-scrollbar-track-piece {
+    background: #303030;
+    border-radius: 1.0em;
+}
+
+#search-results.ul ::-webkit-scrollbar-thumb,
+#search-results.ul ::-webkit-scrollbar-track {
+    background: #8e8e8e;
+    border-radius: 1.0em;
+}
+
+#search-results.ul ::-webkit-scrollbar-thumb:hover,
+#search-results.ul ::-webkit-scrollbar-track:hover {
+    background: #b6b6b6;
+} */

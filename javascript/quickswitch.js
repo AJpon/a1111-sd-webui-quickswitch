@@ -1,4 +1,4 @@
-(function() {
+(function () {
     window.addEventListener('DOMContentLoaded', () => {
         const searchBox = document.createElement('div');
         searchBox.id = 'search-box';
@@ -55,14 +55,11 @@
                 searchResults.innerHTML = '';
                 return;
             }
-            // let regex = new RegExp(searchTerm, 'i');
-            // let matches = Array.from(uiButtons).filter(button => regex.test(button.textContent));
-            // let html = matches.map(button => `<li>${button.textContent}</li>`).join('');
             let matchingResults = [];
             for (let i = 0; i < uiButtons.length; i++) {
                 let button = uiButtons[i];
                 let buttonText = button.textContent.toLowerCase();
-                if (buttonText.includes(searchTerm)) {
+                if (buttonText.includes(searchTerm.toLowerCase())) {
                     matchingResults.push(button);
                 }
             }
