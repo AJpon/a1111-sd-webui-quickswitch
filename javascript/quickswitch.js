@@ -42,7 +42,7 @@
 
         function handleAltKeyDown(event) {
             let now = Date.now();
-            if (event.key === 'Alt' && now - lastAltKeyDownTime < 500) {
+            if ((event.key === 'Alt' && now - lastAltKeyDownTime < 500) || (event.ctrlKey && event.code === 'Space')) {
                 openSearchBox();
             }
             lastAltKeyDownTime = now;
